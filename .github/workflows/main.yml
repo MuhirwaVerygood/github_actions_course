@@ -45,7 +45,5 @@ jobs:
       - name : Push to Docker Hub
         uses: docker/build-push-action@v6
         with:
-            context: .
-            dockerfile: Dockerfile
             push: true
             tags: spring-boot-for-beginners:latest
